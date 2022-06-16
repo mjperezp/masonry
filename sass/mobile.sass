@@ -1,0 +1,69 @@
+//===
+// VENDORS
+//===
+
+// END VENDORS
+
+@import 'typography'
+@import 'variables'
+@import 'mixins'
+@import 'base'
+
+//===
+// PATTERN 7-1 LITE
+//===
+@import 'mobile/header'
+@import 'mobile/footer'
+// END PATTERN 7-1 LITE
+
+//===
+// PAGES
+//===
+@import 'mobile/pages/home'
+// END PAGES
+
+body
+  background-image: none
+
+.container
+  width: 100%
+  margin: 0 auto
+
+
+.main
+  display: grid
+  grid-template-columns: 1fr
+  margin: 3rem 0
+  &__social-media
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 2rem
+  &__img
+    display: none
+  &__texts
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin-top: 2rem
+    grid-column: 1 / 2
+    grid-row: 1 / 2
+
+.nav
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: end
+  gap: 1rem
+  grid-column: 1 / 2
+  grid-row: 2 / 3
+  margin-top: 3rem
+  margin-bottom: 0
+  &__title
+    text-align: center
+
+.footer
+  margin-top: 6rem
+
